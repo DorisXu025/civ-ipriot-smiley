@@ -266,9 +266,10 @@ Unlike the `Happy` smiley, the current implementation of the `Sad` smiley does n
 **Understanding Blink Mechanism:**
 
 1. Does the code's author believe that every `Smiley` should be able to blink? Explain.
-
+ 
 > Yes, because the base class of Blinkable is inherited in the Happy class and displayed by blink() method.
 >
+> Revised answer: No, every Smiley could be able to blink but not necesary to say they have to. You will need to add the blink() to make the face blinkable. For example, the default Sad Smileys can't blink because the blink() method was not inherited.
 
 2. For those smileys that blink, does the author expect them to blink in the same way? Explain.
 
